@@ -1,0 +1,9 @@
+const name = ["rahul", "vivek", "anuj"];
+
+const indexFilter = (ind) =>{
+    
+
+const filterName = name.filter((data,index )=>(ind!==index ) )
+return filterName
+}
+console.log(indexFilter(1))
