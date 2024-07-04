@@ -1,0 +1,23 @@
+import React, { useState, useRef } from "react";
+function App() {
+  const [count, setCount] = useState(0);
+  const fontRef = useRef();
+  const adder = (num) => {
+    setCount((prev) => prev + num);
+  };
+  const addTwo = () => adder(2);
+
+
+
+
+  return (
+    <>
+      <h1 ref={fontRef}>{count}</h1>
+      <button onClick={addTwo}>add2</button>
+      <button onClick={() => adder(3)}>add3</button>
+     
+    </>
+  );
+}
+
+export default App;
